@@ -7,7 +7,7 @@ from gui import Gui
 
 '''
 Question 1: Changer le titre de la fenetre ok!
-Question 2: Changer la taille minimale de la fenetre (1280x720)
+Question 2: Changer la taille minimale de la fenetre (1280x720) ok:
 Question 3: ajouter un menu "fichier" avec 3 actions possible (ouvrir / enregistrer / quitter)
 Question 4: Ajouter la description des action dans la "statue bar"
 

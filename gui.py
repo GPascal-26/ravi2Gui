@@ -21,3 +21,12 @@ class Gui(QMainWindow):
         self.setFixedSize(1920,1080)
         #setting the minimum size
         self.setMinimumSize(1280, 720)
+
+    def initUI(self):
+        self.setWindowTitle(self.title)
+        self.setGeometry(self.left, self.top, self.width, self.height)
+
+        mainMenu = self.menuBar()
+        openMenu = mainMenu.addMenu('Open')
+        registerMenu = mainMenu.addMenu('Register')
+        leaveMenu = mainMenu.addMenu('Leave')
