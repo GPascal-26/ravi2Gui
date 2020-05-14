@@ -13,7 +13,11 @@ class Gui(QMainWindow):
         self.statusBar().showMessage('Ready')
 
         self.setGeometry(300, 300, 250, 150)
-        self.setWindowTitle('Statusbar')
+        self.setWindowTitle('RAVIbar')
         self.show()
 
-
+    def __init__(self):
+        super(Gui, self).__init__()
+        self.setFixedSize(1920,1080)
+        #setting the minimum size
+        self.setMinimumSize(1280, 720)
