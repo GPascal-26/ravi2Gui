@@ -59,3 +59,23 @@ def __init__(self, parent):
     # Add tabs to widget
     self.layout.addWidget(self.tabs)
     self.setLayout(self.layout)
+
+    # ajouter bouton input dans l'onglet 1
+
+    #Label's to fill widget
+        self.label1 = QtWidgets.QLabel("Tab 1")
+        self.label2 = QtWidgets.QLabel("Tab 2")
+
+        # Adding tab's
+        self.tab_widget.addTab(self.label1, "Tab 1")
+        self.tab_widget.addTab(self.label2, "Tab 2")
+
+        # Tab button's
+        self.right = self.tab_widget.tabBar().RightSide
+        self.tab_widget.tabBar().setTabButton(0, self.right, TabButtonWidget())
+        self.tab_widget.tabBar().setTabButton(1, self.right, TabButtonWidget())
+
+        # Tab settings
+        self.tab_widget.tabBar().setMovable(True)
+
+        self.show()

@@ -1,7 +1,6 @@
 import sys
 
-from PyQt5.QtWidgets import QApplication
-
+from PyQt5.QtWidgets import QApplication, QMainWindow
 from gui import Gui
 
 
@@ -9,9 +8,9 @@ from gui import Gui
 Question 1: Changer le titre de la fenetre ok!
 Question 2: Changer la taille minimale de la fenetre (1280x720) ok!
 Question 3: Ajouter un menu "fichier" avec 3 actions possible (ouvrir / enregistrer / quitter) ok!
-Question 4: Ajouter la description des actions dans la "statue bar"
+Question 4: Ajouter la description des actions dans la "statue bar" nok!
 
-Question 5: ajouter un systeme d'onglet
+Question 5: ajouter un systeme d'onglet ok !
 Question 6: dans l'onglet 1, ajouter un bouton qui ouvre un "input file" pour demander le nom de l'utilisateur
 Question 7: dans l'onglet 1, ajouter un label pour afficher le nom de l'utilisateur
 Question 8: Changer l'arriere plan de l'onglet 1 avec une image de votre choix
