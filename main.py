@@ -15,7 +15,7 @@ Question 6: dans l'onglet 1, ajouter un bouton qui ouvre un "input file" pour de
 Question 7: dans l'onglet 1, ajouter un label pour afficher le nom de l'utilisateur ok
 Question 8: Changer l'arriere plan de l'onglet 1 avec une image de votre choix ok
 
-Question 9: dans l'onglet 2, ajouter un tableau a deux colonnes pour enregistrer les carateristiques de l'utilisateur (nom, prenom, date de naissance, sexe, taille poid)
+Question 9: dans l'onglet 2, ajouter un tableau a deux colonnes pour enregistrer les carateristiques de l'utilisateur (nom, prenom, date de naissance, sexe, taille, poids) ok 
 Question 10: dans l'onglet 2, ajouter un bouton "enregistrer" qui enregistre dans un fichier les carateristiques dans un fichier json  
 
 
