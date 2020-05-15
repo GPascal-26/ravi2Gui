@@ -1,8 +1,9 @@
 import sys
+import this
 
 from PyQt5 import QtCore
 from PyQt5.QtWidgets import QMainWindow, QApplication, QAction, qApp, QWidget, QVBoxLayout, QTabWidget, QPushButton, \
-    QInputDialog, QLineEdit
+    QInputDialog, QLineEdit, QTableWidgetItem, QTableWidget
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -67,6 +68,8 @@ class Gui(QMainWindow):
         self.quit
 
 
+
+
 class MyTableWidget(QWidget):
 
     def __init__(self, parent):
@@ -89,7 +92,7 @@ class MyTableWidget(QWidget):
 
         self.tab1.layout.addWidget(openButton)
         self.tab1.setLayout(self.tab1.layout)
-        self.tab1.setStyleSheet(_fromUtf8("background-image: url(./fondDecran.png); background-attachment: fixed"))
+        self.tab1.setStyleSheet(_fromUtf8("background-image: url(./fondDecran.jpg); background-attachment: fixed"))
 
 
 
@@ -103,6 +106,9 @@ class MyTableWidget(QWidget):
         print(nom)
 
         # Add grid to widget
+
+    class TableWidget(object):
+        pass
 
     tableWidget = new
     QTableWidget(this);
