@@ -94,29 +94,30 @@ class MyTableWidget(QWidget):
         self.tab1.setLayout(self.tab1.layout)
         self.tab1.setStyleSheet(_fromUtf8("background-image: url(./fondDecran.jpg); background-attachment: fixed"))
 
+        # Add tabs
+        self.tabs.addTab(self.tab1, "Onglet 1")
+        self.tabs.addTab(self.tab2, "Onglet 2")
 
+        self.tab1.layout = QVBoxLayout(self)
+        openButton = QPushButton("Nom ?")
+        openButton.clicked.connect(self.openClick)
+
+        self.tab1.layout.addWidget(openButton)
+        self.tab1.setLayout(self.tab1.layout)
+        self.tab1.setStyleSheet(("background-image: url(./logositeweb_72ppp.png); background-attachment: fixed;"))
+
+        # Tab 2:
+        self.tableWidget = QTableWidget()
+        self.tableWidget.setRowCount(6)
+        self.tableWidget.setColumnCount(2)
+
+        self.tab2.layout = QVBoxLayout(self)
+        self.tab2.layout.addWidget(self.tableWidget)
+        self.tab2.setLayout(self.tab2.layout)
+
+        self.tableWidget.setItem(0, 0, QTableWidgetItem("nom ?"))
+        self.tableWidget.setItem(1, 0, QTableWidgetItem("Prenom ?"))
 
         # Add tabs to widget
         self.layout.addWidget(self.tabs)
         self.setLayout(self.layout)
-
-    def openClick(self):
-        print("click")
-        nom,type = QInputDialog.getText(self,"input dialog","Votre Nom ?",QLineEdit.Normal,"")
-        print(nom)
-
-        # Add grid to widget
-
-    class TableWidget(object):
-        pass
-
-    tableWidget = new
-    QTableWidget(this);
-    tableWidget->setRowCount(6);
-    tableWidget->setColumnCount(2);
-    TableWidget->setItem(1, 1, new QTableWidgetItem("Nom"));
-    TableWidget->setItem(2, 1, new QTableWidgetItem("Prenom"));
-    TableWidget->setItem(1, 1, new QTableWidgetItem("date de naissance"));
-    TableWidget->setItem(2, 1, new QTableWidgetItem("sexe"));
-    TableWidget->setItem(1, 1, new QTableWidgetItem("Taille"));
-    TableWidget->setItem(2, 1, new QTableWidgetItem("Poids"));
